@@ -26,6 +26,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { SummaryComponent } from './summary/summary.component';
 import { PassbookedComponent } from './passbooked/passbooked.component';
 import { BookingcancelComponent } from './bookingcancel/bookingcancel.component';
+import { EditcustomerComponent } from './editcustomer/editcustomer.component';
 
 
 //import { UserloginComponent } from './userlogin/userlogin.component';
@@ -107,7 +108,10 @@ const routes: Routes = [
     path:'passbook/:tId' ,component:PassbookedComponent
   },
   {
-    path:'bookingcancel' ,component:BookingcancelComponent
+    path:'bookingcancel/:tId' ,component:BookingcancelComponent
+  },
+  {
+    path:'editcust/:customerId' ,component:EditcustomerComponent
   }
 ]
 
